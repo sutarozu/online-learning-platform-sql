@@ -1,0 +1,58 @@
+# ---------- Operating system ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ---------- Editors and IDEs ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- Database client files ----------
+# DBeaver
+.dbeaver/
+.dbeaver-data-sources*.xml
+# pgAdmin
+pgadmin4.db
+pgadmin/
+# DataGrip
+*.iml
+
+# ---------- Secrets and local config ----------
+.env
+.env.*
+*.pem
+*.key
+pgpass.conf
+.pgpass
+config.local.*
+
+# ---------- Database dumps and backups ----------
+# (keep the project's own .sql scripts; ignore binary dumps and backups)
+*.dump
+*.backup
+*.bak
+*.tar
+*.sql.gz
+*.sql.zip
+
+# ---------- Local database data ----------
+pgdata/
+postgres-data/
+data/
+
+# ---------- Logs and temporary files ----------
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# ---------- Query output exports ----------
+# Large raw exports are ignored; keep only curated results in results/
+exports/
+*.csv
+!results/**/*.csv
