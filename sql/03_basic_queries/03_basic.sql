@@ -1,3 +1,5 @@
+-- Level 1: Fondasi
+
 -- 1. Tampilkan daftar kursus beserta nama kategori, dan nama instruktur lalu diurutkan dari harga tertinggi.
 
 select
