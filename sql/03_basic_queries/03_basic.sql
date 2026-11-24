@@ -25,3 +25,14 @@ from courses c
 left join instructors ins on c.instructor_id = ins.instructor_id
 left join enrollments e on c.course_id = e.course_id
 where e.enrollment_id is null;
+
+-- 3. Hitung total pendapatan per bulan, tanpa enrollment berstatus refunded.
+
+select 
+    to_char(e.enroll_date, 'yyyy-mm') AS bulan,
+    sum(c.price) as total_pendapatan
+from enrollments e
+join courses c on e.course_id = c.course_id
+where e.status <> 'refunded'
+group by to_char(e.enroll_date, 'yyyy-mm')
+order by bulan asc;
